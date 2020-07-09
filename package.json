@@ -1,0 +1,38 @@
+{
+  "name": "back-end",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "await-to-js": "^2.1.1",
+    "bcrypt": "^1.0.3",
+    "bcrypt-promise": "^2.0.0",
+    "body-parser": "^1.18.3",
+    "busboy": "^0.3.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "csprng": "^0.1.2",
+    "debug": "^4.1.1",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "fcm-node": "^1.4.0",
+    "firebase-admin": "^7.2.0",
+    "fs": "0.0.1-security",
+    "http-errors": "^1.7.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.6.5",
+    "nodemailer": "^6.0.0",
+    "osenv": "^0.1.5",
+    "parse-error": "^0.2.0",
+    "passport": "^0.4.0",
+    "pug": "^2.0.3",
+    "sequelize": "^5.8.6",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

@@ -1,0 +1,21 @@
+<?php
+require __DIR__ . '/twilio-php-master/Twilio/autoload.php';
+use Twilio\Rest\Client;
+$phone = $_POST['number'];
+$client = new Client($sid, $token);
+$client->messages->create(
+ $phone, // number to send to
+ array(
+ 'from' => '+15732995179', // your Twilio number
+ 'body' => "There’s something strange in my neighborhood. I don’t know who to call. Send help!"
+ )
+);
+?>
+<html>
+<body>
+<form method="post" action="index.php">
+	<input type="text" name="phoneNumber"/>
+	<input type="submit"/>
+</form>
+</body>
+</html>
